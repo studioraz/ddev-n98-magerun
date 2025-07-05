@@ -13,7 +13,7 @@ ddev restart
 Once running, you can use:
 
 ```bash
-ddev n98 list
+ddev n98
 ```
 
 If the command is not recognized, ensure the `commands/web/n98` script is executable:
