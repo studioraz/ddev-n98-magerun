@@ -1,0 +1,11 @@
+#ddev-generated
+#!/usr/bin/env bash
+## Description: Run n98-magerun2 inside the DDEV web container
+## Usage: ddev n98 [args]
+
+if [ ! -f bin/n98 ]; then
+  echo "bin/n98 not found. Please run 'ddev add-on get studioraz/ddev-n98-magerun' first."
+  exit 1
+fi
+
+php bin/n98 "$@"

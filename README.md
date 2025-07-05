@@ -6,7 +6,7 @@ A DDEV add-on to install the n98-magerun2 CLI in your project via `ddev add-on g
 
 ```bash
 cd your-project
-ddev get studioraz/ddev-n98-magerun
+ddev add-on get studioraz/ddev-n98-magerun
 ddev start
 ```
 
