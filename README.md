@@ -14,7 +14,6 @@ Once running, you can use:
 
 ```bash
 ddev n98 list
-ddev n98 sys:info
 ```
 
 If the command is not recognized, ensure the `commands/web/n98` script is executable:
