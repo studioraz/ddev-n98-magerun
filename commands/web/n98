@@ -1,10 +1,12 @@
-#ddev-generated
-#!/usr/bin/env bash
-## Description: Run n98-magerun2 inside the DDEV web container
-## Usage: ddev n98 [args]
+#!/bin/bash
+
+## Description: Run n98 CLI inside the web container
+## Usage: n98 [flags] [args]
+## Example: "ddev n98 list" or "ddev n98 maintenance:enable" or "ddev n98 sampledata:reset"
 
 if [ ! -f bin/n98 ]; then
-  echo "bin/n98 not found. Please run 'ddev add-on get studioraz/ddev-n98-magerun' first."
+  echo 'bin/n98 does not exist.'
+  echo 'Please verify that you installed n98 under <project-root>/bin directory.'
   exit 1
 fi
 

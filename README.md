@@ -7,7 +7,7 @@ A DDEV add-on to install the n98-magerun2 CLI in your project via `ddev add-on g
 ```bash
 cd your-project
 ddev add-on get studioraz/ddev-n98-magerun
-ddev start
+ddev restart
 ```
 
 Once running, you can use:
@@ -15,6 +15,12 @@ Once running, you can use:
 ```bash
 ddev n98 list
 ddev n98 sys:info
+```
+
+If the command is not recognized, ensure the `commands/web/n98` script is executable:
+
+```bash
+chmod +x .ddev/commands/web/n98
 ```
 
 ## Uninstallation
