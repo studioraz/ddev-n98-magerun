@@ -1,0 +1,27 @@
+# ddev-n98-magerun
+
+A DDEV add-on to install the n98-magerun2 CLI in your project via `ddev add-on get`.
+
+## Installation
+
+```bash
+cd your-project
+ddev get studioraz/ddev-n98-magerun
+ddev start
+```
+
+Once running, you can use:
+
+```bash
+ddev n98 list
+ddev n98 sys:info
+```
+
+## Uninstallation
+
+```bash
+ddev add-on remove ddev-n98-magerun
+```
+
+This will clean up both the wrapper and the downloaded PHAR.
+# ddev-n98-magerun
